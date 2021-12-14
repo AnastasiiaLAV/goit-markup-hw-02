@@ -1,3 +1,7 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
 .hidden-title {
   width: 1px;
   height: 1px;
@@ -6,4 +10,10 @@
 }
 .container {
   width: 1200px;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
 }
