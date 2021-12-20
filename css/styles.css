@@ -5,11 +5,12 @@
   --title-color: #212121;
   --text-color: #757575;
   --btn-color: #2196f3;
+  --btn-background: #f5f4fa;
 }
 
 body {
   font-family: Roboto, sans-serif;
-  background: #e5e5e5;
+  background: var(--header-color);
   letter-spacing: 0.03em;
 }
 .hidden-title {
@@ -85,7 +86,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--header-color);
 }
 .hero-btn {
   background-color: var(--btn-color);
@@ -96,7 +97,11 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--header-color);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background: #188ce8;
 }
 /* section 1 */
 .main-title {
@@ -115,7 +120,7 @@ body {
 .main-title-two {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.16px;
+  line-height: 1.16;
   text-align: center;
   color: var(--title-color);
 }
@@ -143,12 +148,17 @@ body {
 
 /* !------maine portfolio-----! */
 .main-btn {
-  background: var(--btn-color);
+  background: var(--btn-background);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  color: var(--title-color);
+}
+.main-btn:hover,
+.main-btn:focus {
+  background: var(--btn-color);
   color: var(--header-color);
 }
 .main-project-title {
